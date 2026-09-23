@@ -83,9 +83,18 @@
               <h2>Transcript</h2>
             </div>
             <div class="download-actions">
+              <button id="tts-btn" class="secondary-btn hidden" type="button">Listen to transcript</button>
               <button id="download-txt" class="secondary-btn hidden" type="button">Download .TXT</button>
               <button id="download-docx" class="secondary-btn hidden" type="button">Download .DOCX</button>
             </div>
+          </div>
+
+          <div id="tts-control" class="tts-control hidden">
+            <div class="tts-header">
+              <h3>Speech playback</h3>
+              <span id="tts-status">Ready</span>
+            </div>
+            <div id="tts-timeline" class="tts-timeline"></div>
           </div>
 
           <div class="result-layout">

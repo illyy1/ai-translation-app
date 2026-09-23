@@ -346,6 +346,79 @@ select {
   border: 1px solid rgba(125, 211, 252, 0.18);
 }
 
+.tts-control {
+  margin: 0 0 18px;
+  padding: 16px 14px 12px;
+  border-radius: 16px;
+  background: rgba(15, 25, 38, 0.7);
+  border: 1px solid rgba(170, 184, 255, 0.12);
+}
+
+.tts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tts-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.tts-header span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tts-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tts-chunk {
+  flex: 1 1 120px;
+  min-width: 120px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(170, 184, 255, 0.08);
+  border: 1px solid rgba(170, 184, 255, 0.12);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.tts-chunk:hover {
+  transform: translateY(-1px);
+  border-color: rgba(154, 228, 215, 0.4);
+}
+
+.tts-chunk.is-active {
+  background: linear-gradient(135deg, rgba(154, 228, 215, 0.18), rgba(244, 183, 216, 0.16));
+  border-color: rgba(154, 228, 215, 0.4);
+}
+
+.tts-chunk strong {
+  display: block;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 5px;
+}
+
+.tts-chunk span {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--text);
+}
+
 .result-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.8fr) minmax(260px, 0.9fr);
